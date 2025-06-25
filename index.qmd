@@ -1,0 +1,687 @@
+---
+from: markdown+emoji
+execute: 
+  cache: true
+format: 
+  letterbox-revealjs:
+    theme: custom.scss
+    progress: false
+    menu: false
+    width: 1280
+    height: 720
+    preload-iframes: true
+filters:
+  - custom-callouts
+callout-appearance: simple
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: false
+```
+
+## {}
+
+::: columns
+::: {.column width="37.5%"}
+:::
+::: {.column width="60%"}
+
+![](resources/hex.svg){.sticker-float}
+
+::: {.title data-id="title"}
+IIF Workshop on Open Source Forecasting
+:::
+
+::: {.dateplace}
+26th June 2025 @ IIF OSF
+:::
+
+:::{.committee}
+Organised by:
+
+::: columns
+
+::: {.column width="50%"}
+* Mitchell&nbsp;O'Hara-Wild
+* Shanika&nbsp;Wickramasuriya
+* Xiaoqian&nbsp;Wang
+* Ivan&nbsp;Svetunkov
+:::
+
+::: {.column width="50%"}
+* Azul&nbsp;Garza&nbsp;Ramirez
+* Resul&nbsp;Akay
+* Bahman&nbsp;Rostami-Tabar
+:::
+:::
+
+:::
+
+::: {.callout-link}
+
+## Useful links
+
+![](resources/forum.svg){.icon} [event.nectric.com.au/iif-osf/](https://event.nectric.com.au/iif-osf/)
+
+![](resources/projector-screen-outline.svg){.icon} [slides.mitchelloharawild.com/iif-osf](https://slides.mitchelloharawild.com/iif-osf)
+
+![](resources/github.svg){.icon} [mitchelloharawild/talk-iif-osf-welcome](https://github.com/mitchelloharawild/talk-iif-osf-welcome)
+
+:::
+
+:::
+:::
+
+![](backgrounds/sander-weeteling-KABfjuSOx74-unsplash.jpg){.image-left}
+
+
+## {}
+
+::: columns
+::: {.column width="40%"}
+:::
+::: {.column width="60%"}
+
+### Welcome! :wave:
+
+Let's chat open source forecasting software!
+
+::: callout-tip
+## Workshop goals
+
+::: incremental
+* Foster collaboration
+* Improve communication
+* Discuss advancements
+* Establish best practices
+* Support future developers
+:::
+:::
+
+:::
+:::
+
+![](backgrounds/sander-weeteling-KABfjuSOx74-unsplash.jpg){.image-left}
+
+## {}
+
+::: columns
+::: {.column width="40%"}
+:::
+::: {.column width="60%"}
+
+### Housekeeping
+
+::: {.callout-important .fragment}
+## Safety
+
+* Follow the [code of conduct](https://event.nectric.com.au/iif-osf/participation/coc.html)
+* Please be careful of tripping hazards
+* In-case of emergency evacuation follow Xiaoqian
+:::
+
+::: {.callout-tip .fragment}
+### Social media
+
+We encourage you to post about the event on social media with the hashtag `#iifosf2025`
+:::
+
+::: {.callout-note .fragment}
+### Event recording
+
+This workshop is being recorded, and presentations will be published online on YouTube afterwards.
+
+If you'd prefer your talk to not be published, email me.
+:::
+
+
+:::
+:::
+
+![](backgrounds/sander-weeteling-KABfjuSOx74-unsplash.jpg){.image-left}
+
+## {}
+
+::: columns
+::: {.column width="40%"}
+:::
+::: {.column width="60%"}
+
+### Workshop topics
+
+- **Forecasting frameworks**
+  
+  forecast, fable, sktime, aeon, Durbyn.jl
+  
+- **Forecast reconciliation**
+
+  FoReco, bayesRecon, FlowRec
+  
+- **Implementing models**
+  
+  smooth, bsvars, StatsForecast
+
+- **Machine learning**
+  
+  Neural networks, TSLib & OpenLTM, multimodel and contextual forecasting
+  
+:::
+:::
+
+![](backgrounds/sander-weeteling-KABfjuSOx74-unsplash.jpg){.image-left}
+
+
+## {background-iframe="https://event.nectric.com.au/iif-osf/program/schedule/"}
+
+## Organising Committee
+
+::: persons
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/16127127?v=4)
+
+### Mitchell O'Hara-Wild
+
+General chair
+
+:::
+
+::: person-card
+
+![](https://avatars.githubusercontent.com/u/7396330?v=4)
+
+### Ivan Svetunkov
+
+Programme chair
+
+:::
+
+::: person-card
+
+![](https://avatars.githubusercontent.com/u/25769816?v=4)
+
+### Bahman Rostami-Tabar
+
+Event coordinator 
+
+:::
+
+::: person-card
+
+![](https://avatars.githubusercontent.com/u/37219858?v=4)
+
+### Xiaoqian Wang
+
+Local logistics
+
+:::
+
+::: person-card
+
+![](https://avatars.githubusercontent.com/u/10517170?v=4)
+
+### Azul Garza
+
+Invitations \& general Support
+
+:::
+
+
+::: person-card
+
+![](https://avatars.githubusercontent.com/u/44698891?v=4)
+
+### Resul Akay
+
+Invitations \& general Support
+
+:::
+
+
+::: person-card
+
+![](https://avatars.githubusercontent.com/u/16096072?v=4)
+
+### Shanika Wickramasuriya
+
+Invitations \& general Support
+
+:::
+
+:::
+
+## {background-iframe="https://event.nectric.com.au/iif-osf/about/sponsors/"}
+
+## {background-iframe="anim/particles.html"}
+
+::: {.columns .talk}
+::: {.column width="60%"}
+
+::: {.callout appearance="default"}
+## 25 years of open source forecasting software
+
+Twenty-five years ago, the only open source forecasting software available were the HoltWinters(), arima() and StructTS() functions in R. Now we have many R packages available that are widely used, a burgeoning number of Python packages, and a few Julia packages, along with C or C++ implementations of ETS, ARIMA and other well-known models. I will discuss the development of open source forecasting software over the years, and highlight areas needing attention.
+
+:::
+:::
+
+::: {.column width="40%"}
+
+::: speakers
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/127518?v=4)
+
+### Rob Hyndman
+
+Presenter
+
+:::
+:::
+
+:::
+:::
+
+
+## {background-iframe="anim/particles.html"}
+
+::: {.columns .talk}
+::: {.column width="60%"}
+
+::: {.callout appearance="default"}
+## Designing extensible forecasting frameworks
+
+A well-designed interface is instrumental in making software easy to learn and use. The design of statistical software is inherently subjective, and there are many difficult decisions involved in creating interfaces that work cohesively within the intended domain. A forecasting framework sets out the design language for the forecasting workflow, guiding users conceptually about how different steps relate to one another. Making each element of the workflow extensible enables developers to implement new models, accuracy metrics, or other forecasting techniques that can be immediately used in conjunction with other forecasting elements. In this talk, I will examine the design decisions made when creating fable, the tidy time series forecasting successor of the forecast package.
+
+:::
+:::
+
+::: {.column width="40%"}
+
+::: speakers
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/16127127?v=4)
+
+### Mitchell O\'Hara-Wild
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/9594042?v=4)
+
+### Tony Bagnall
+
+Discussant
+
+:::
+:::
+
+:::
+:::
+
+## {}
+
+::: columns
+::: {.column width="40%"}
+:::
+::: {.column width="60%"}
+
+### Morning tea
+
+Food and drink (yes, and coffee ☕) is available in the hallway.
+
+Please no food or drinks near the seating.
+:::
+:::
+
+![](backgrounds/sander-weeteling-KABfjuSOx74-unsplash.jpg){.image-left}
+
+## {background-iframe="anim/particles.html"}
+
+::: {.columns .talk}
+::: {.column width="60%"}
+
+::: {.callout appearance="default"}
+## FoReco: From foundations to frontiers
+
+In many forecasting applications, producing multiple time series forecasts across different aggregation levels (such as regions, product categories, or time scales) is both common and necessary. However, independently generated forecasts often fail to respect the underlying constraints linking these series, leading to inconsistencies that can compromise decision-making analyses. Forecast reconciliation addresses this challenge, while preserving or even improving forecast accuracy. FoReco is a dedicated open-source R package that systematically implements forecast reconciliation approaches, providing robust tools for obtaining coherent forecasts in a multivariate setting. It supports hierarchical, grouped, and general linearly constrained time series, and implements both classical and modern reconciliation approaches, including bottom-up, top-down, middle-out, and optimal combination methods. Its main features include full support for cross-sectional, temporal, and cross-temporal reconciliation, availability of both projection and structural formulations, and a wide range of flexible covariance matrices based on sparse structures. Additional features include methods for non-negative reconciliation, reconciliation under immutable constraints, and both point and probabilistic forecast reconciliation using parametric or non-parametric approaches.
+
+:::
+:::
+
+::: {.column width="40%"}
+
+::: speakers
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/56480827?v=4)
+
+### Daniele Girolimetto
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/5873560?v=4)
+
+### Charupriya Sharma
+
+Discussant
+
+:::
+:::
+
+:::
+:::
+
+
+
+## {background-iframe="anim/particles.html"}
+
+::: {.columns .talk}
+::: {.column width="60%"}
+
+::: {.callout appearance="default"}
+## Probabilistic forecast reconciliation with bayesRecon
+
+Forecasts generated for each series in a hierarchy often violate aggregation constraints. The packages bayesRecon (R) and bayesreconpy (Python) implement probabilistic forecast reconciliation via conditioning for hierarchical time series. Our packages reconcile probabilistic forecasts to ensure coherence across the hierarchy. They support different types of base forecasts: Gaussian, continuous non-Gaussian, discrete. They also support mixed hierarchies with discrete and continuous forecasts on different levels. The interface is unified across both languages, and the packages are released under an LGPL (≥3) license. This presentation will introduce the software and demonstrate core functionalities with both R and Python short tutorials.
+
+:::
+:::
+
+::: {.column width="40%"}
+
+::: speakers
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/77152345?v=4)
+
+### Lorenzo Zambon
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/171348088?v=4)
+
+### Anubhab Biswas
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/45119856?v=4)
+
+### Olivier Sprangers
+
+Discussant
+
+:::
+:::
+
+:::
+:::
+
+## {}
+
+::: columns
+::: {.column width="40%"}
+:::
+::: {.column width="60%"}
+
+### Lunch
+
+Follow us to the Beihang University canteen!
+:::
+:::
+
+![](backgrounds/sander-weeteling-KABfjuSOx74-unsplash.jpg){.image-left}
+
+## {background-iframe="anim/particles.html"}
+
+::: {.columns .talk}
+::: {.column width="60%"}
+
+::: {.callout appearance="default"}
+## Forecasting smoothly with smooth() package
+
+ADAM (Augmented Dynamic Adaptive Model) is a flexible framework for forecasting using dynamic models. It merges ARIMA and ETS and extends them by implementing explanatory variables, supporting multiple frequencies, and mixture distributions for intermittent demand. ADAM supports a variety of distributions, including Normal, Generalised Normal, Inverse Gaussian, Gamma and others. It allows users to estimate models using a variety of techniques, including regularisation, recursive and direct strategies, and supports custom loss functions, offering flexibility for research purposes. It also supports a variety of ways to produce forecasts for different situations. ADAM is implemented in the smooth package for R. It is agnostic of the provided data and works with vectors, ts, zoo, tsibble classes, together with matrix, data.frame, data.table and others.
+
+:::
+:::
+
+::: {.column width="40%"}
+
+::: speakers
+::: {.person-card}
+
+![](resources/kandrika.jpeg)
+
+### Kandrika Pritularga
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/125186547?v=4)
+
+### Adam Wang
+
+Discussant
+
+:::
+
+:::
+
+:::
+:::
+
+
+
+## {background-iframe="anim/particles.html"}
+
+::: {.columns .talk}
+::: {.column width="60%"}
+
+::: {.callout appearance="default"}
+## Integrating Smooth Capabilities into Python
+
+The smooth package provides a comprehensive state-space framework for forecasting, centered on the Augmented Dynamic Adaptive Model (ADAM). ADAM offers a unified structure that integrates and extends classical time series models like ETS, ARIMA, and regression beyond their standard implementations. Originally developed within the R statistical environment, the growth of Python's forecasting ecosystem motivated the development of a native implementation for its expanding community of researchers and practitioners. This presentation focuses on the engineering specifics of implementing the smooth framework in Python. We explain the architecture, which utilizes the original C++ backend, and detail the refactoring process used to transform the initial translation into an idiomatic, object-oriented Pythonic API.
+
+:::
+:::
+
+::: {.column width="40%"}
+
+::: speakers
+::: {.person-card}
+
+![](resources/filotas.jpeg)
+
+### Filotas Theodosiou
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/36616292?v=4)
+
+### Pablo Montero-Manso
+
+Discussant
+
+:::
+:::
+
+:::
+:::
+
+## {}
+
+::: columns
+::: {.column width="40%"}
+:::
+::: {.column width="60%"}
+
+### Afternoon tea
+
+Food and drinks are available in the hallway.
+
+Please no food or drinks near the seating.
+:::
+:::
+
+![](backgrounds/sander-weeteling-KABfjuSOx74-unsplash.jpg){.image-left}
+
+## {background-iframe="anim/particles.html"}
+
+::: {.columns .talk}
+::: {.column width="60%"}
+
+::: {.callout appearance="default"}
+## bsvars.org design concept: R packages for Predictive Analyses using Bayesian Structural Vector Autoregressions
+
+bsvars.org is a family of R packages offering a comprehensive framework for Bayesian Structural Vector Autoregression analysis commonly used in empirical macroeconomics and finance. It is designed to serve diverse user communities from academic researchers to applied economists at policy institutions. This software ecosystem combines the convenience of data analysis using R with computational efficiency of compiled C++ code, leveraging packages Rcpp and RcppArmadillo to boost performance of computationally intensive Bayesian estimation procedures.
+
+:::
+:::
+
+::: {.column width="40%"}
+
+::: speakers
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/125186547?v=4)
+
+### Adam Wang
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/127518?v=4)
+
+### Rob Hyndman
+
+Discussant
+
+:::
+:::
+
+:::
+:::
+
+
+
+## {background-iframe="anim/particles.html"}
+
+::: {.columns .talk}
+::: {.column width="60%"}
+
+::: {.callout appearance="default"}
+## Open Source Forecasting in Python: A Survey of Tools, Trends, and Trade-offs
+
+As time series forecasting becomes increasingly central to data-driven decision-making across industries, the Python ecosystem has seen rapid growth in tools tailored to this task. This talk presents a comprehensive review of the current landscape of open-source forecasting packages in Python, covering frameworks, toolboxes, and few-model-packages.
+
+:::
+:::
+
+::: {.column width="40%"}
+
+::: speakers
+::: {.person-card}
+
+![](resources/anirban.jpeg)
+
+### Anirban Ray
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/7985502?v=4)
+
+### Franz Király
+
+Presenter
+
+:::
+::: {.person-card}
+
+![](https://avatars.githubusercontent.com/u/524058?v=4)
+
+### Christoph Bergmeir
+
+Discussant
+
+:::
+:::
+
+:::
+:::
+
+## {}
+
+::: columns
+::: {.column width="40%"}
+:::
+::: {.column width="60%"}
+
+### See you tomorrow!
+
+Don't forget to bring your passport (or Chinese ID card) for entry!
+:::
+:::
+
+![](backgrounds/sander-weeteling-KABfjuSOx74-unsplash.jpg){.image-left}
+
+
+## Unsplash credits
+
+::: {.callout-unsplash}
+
+## Thanks to these Unsplash contributors for their photos
+
+```{r unsplash}
+#| echo: FALSE
+#| cache: TRUE
+library(httr)
+library(purrr)
+unsplash_pattern <- ".*-(.{11})-unsplash\\.jpg.*"
+slides <- readLines("index.qmd")
+backgrounds <- slides[grepl("backgrounds/.+?unsplash.jpg", slides)]
+images <- unique(sub(".*\\(backgrounds/(.+?)\\).*", "\\1", backgrounds))
+images <- images[grepl(unsplash_pattern, images)]
+ids <- sub(unsplash_pattern, "\\1", images)
+
+get_unsplash_credit <- function(id) {
+  unsplash_url <- "https://api.unsplash.com/" 
+  my_response <- httr::GET(unsplash_url, path = c("photos", id), query = list(client_id=Sys.getenv("UNSPLASH_ACCESS")))
+  xml <- content(my_response)
+  
+  name <- xml$user$name
+  desc <- xml$description%||%"Photo"
+  sprintf(
+    "* %s: [%s%s](%s)",
+    name,
+    strtrim(desc,pmax(1, 60-nchar(name))),
+    if(nchar(desc)>(60-nchar(name))) "..." else "",
+    modify_url("https://unsplash.com/", path = file.path("photos", xml$id))
+  )
+}
+htmltools::includeMarkdown(paste0(map_chr(ids, get_unsplash_credit), collapse = "\n"))
+```
+
+:::

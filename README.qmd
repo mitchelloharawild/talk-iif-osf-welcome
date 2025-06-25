@@ -25,10 +25,11 @@ discuss the latest ideas in forecasting software.
 
 * About
 * Topics
-* Schedule
+* Safety
 * Code of Conduct
-* Sponsors
+* Schedule
 * Committee
+* Sponsors
 
 ### Format
 
