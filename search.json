@@ -109,14 +109,14 @@
     "href": "index.html#section-16",
     "title": "IIF OSF",
     "section": "",
-    "text": "Open Source Forecasting in Python: A Survey of Tools, Trends, and Trade-offs\n\n\nAs time series forecasting becomes increasingly central to data-driven decision-making across industries, the Python ecosystem has seen rapid growth in tools tailored to this task. This talk presents a comprehensive review of the current landscape of open-source forecasting packages in Python, covering frameworks, toolboxes, and few-model-packages.\n\n\n\n\n\n\n\nAnirban Ray\nPresenter\n\n\n\nFranz Király\nPresenter\n\n\n\nChristoph Bergmeir\nDiscussant"
+    "text": "Open Source Forecasting in Python: A Survey of Tools, Trends, and Trade-offs\n\n\nAs time series forecasting becomes increasingly central to data-driven decision-making across industries, the Python ecosystem has seen rapid growth in tools tailored to this task.\nThis talk presents a comprehensive review of the current landscape of open-source forecasting packages in Python, covering frameworks, toolboxes, and few-model-packages.\nWe will explore not just the technical capabilities - such as model variety, composability, unified interfaces, performance, scalability, and ease of use - but also the governance and openness of these tools.\nAttendees will gain insight into how openly governed community projects compare with corporate-backed initiatives, and how the availability (or restriction) of pretrained models, APIs, and infrastructure influences adoption and innovation. The talk also critically examines the trend of gated forecasting models, where core capabilities are locked behind APIs or proprietary layers, which is seeing an especial proliferation around so-called “foundation models”, versus fully open-source implementations of the same technologies.\nBy the end of the session, participants will leave with a nuanced understanding of the strengths, trade-offs, and pitfalls in the current Python forecasting ecosystem, and practical guidance for selecting tools aligned with their organizational values and technical requirements.\n\n\n\n\n\n\n\nAnirban Ray\nPresenter\n\n\n\nFranz Király\nPresenter\n\n\n\nChristoph Bergmeir\nDiscussant"
   },
   {
     "objectID": "index.html#section-17",
     "href": "index.html#section-17",
     "title": "IIF OSF",
     "section": "",
-    "text": "See you tomorrow!\nDon’t forget to bring your passport (or Chinese ID card) for entry!"
+    "text": "See you tomorrow!\n\n\n\n\n\n\nCampus entry requirements\n\n\nDon’t forget to bring your passport (or Chinese ID card) for entry!"
   },
   {
     "objectID": "index.html#unsplash-credits",
