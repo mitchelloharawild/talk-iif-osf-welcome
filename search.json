@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "IIF Workshop on Open Source Forecasting\n\n\n26th June 2025 @ IIF OSF\n\n\nOrganised by:\n\n\n\nMitchell O’Hara-Wild\nShanika Wickramasuriya\nXiaoqian Wang\nIvan Svetunkov\n\n\n\nAzul Garza Ramirez\nResul Akay\nBahman Rostami-Tabar\n\n\n\n\n\n\n\n\n\n\nUseful links\n\n\n event.nectric.com.au/iif-osf/\n slides.mitchelloharawild.com/iif-osf\n mitchelloharawild/talk-iif-osf-welcome"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Welcome! 👋\nLet’s chat open source forecasting software!\n\n\n\n\n\n\nWorkshop goals\n\n\n\nFoster collaboration\nImprove communication\nDiscuss advancements\nEstablish best practices\nSupport future developers"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Housekeeping\n\n\n\n\n\n\n\nSafety\n\n\n\nFollow the code of conduct\nPlease be careful of tripping hazards\nIn-case of emergency evacuation follow Xiaoqian\n\n\n\n\n\n\n\n\n\n\n\n\nSocial media\n\n\nWe encourage you to post about the event on social media with the hashtag #iifosf2025\n\n\n\n\n\n\n\n\n\n\n\nEvent recording\n\n\nThis workshop is being recorded, and presentations will be published online on YouTube afterwards.\nIf you’d prefer your talk to not be published, email me."
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Workshop topics\n\nForecasting frameworks\nforecast, fable, sktime, aeon, Durbyn.jl\nForecast reconciliation\nFoReco, bayesRecon, FlowRec\nImplementing models\nsmooth, bsvars, StatsForecast\nMachine learning\nNeural networks, TSLib & OpenLTM, multimodel and contextual forecasting"
+  },
+  {
+    "objectID": "index.html#organising-committee",
+    "href": "index.html#organising-committee",
+    "title": "IIF OSF",
+    "section": "Organising Committee",
+    "text": "Organising Committee\n\n\n\nMitchell O’Hara-Wild\nGeneral chair\n\n\n\nIvan Svetunkov\nProgramme chair\n\n\n\nBahman Rostami-Tabar\nEvent coordinator\n\n\n\nXiaoqian Wang\nLocal logistics\n\n\n\nAzul Garza\nInvitations & general Support\n\n\n\nResul Akay\nInvitations & general Support\n\n\n\nShanika Wickramasuriya\nInvitations & general Support"
+  },
+  {
+    "objectID": "index.html#section-6",
+    "href": "index.html#section-6",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "25 years of open source forecasting software\n\n\nTwenty-five years ago, the only open source forecasting software available were the HoltWinters(), arima() and StructTS() functions in R. Now we have many R packages available that are widely used, a burgeoning number of Python packages, and a few Julia packages, along with C or C++ implementations of ETS, ARIMA and other well-known models. I will discuss the development of open source forecasting software over the years, and highlight areas needing attention.\n\n\n\n\n\n\n\nRob Hyndman\nPresenter"
+  },
+  {
+    "objectID": "index.html#section-7",
+    "href": "index.html#section-7",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Designing extensible forecasting frameworks\n\n\nA well-designed interface is instrumental in making software easy to learn and use. The design of statistical software is inherently subjective, and there are many difficult decisions involved in creating interfaces that work cohesively within the intended domain. A forecasting framework sets out the design language for the forecasting workflow, guiding users conceptually about how different steps relate to one another. Making each element of the workflow extensible enables developers to implement new models, accuracy metrics, or other forecasting techniques that can be immediately used in conjunction with other forecasting elements. In this talk, I will examine the design decisions made when creating fable, the tidy time series forecasting successor of the forecast package.\n\n\n\n\n\n\n\nMitchell O'Hara-Wild\nPresenter\n\n\n\nTony Bagnall\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-8",
+    "href": "index.html#section-8",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Morning tea\nFood and drink (yes, and coffee ☕) is available in the hallway.\nPlease no food or drinks near the seating."
+  },
+  {
+    "objectID": "index.html#section-9",
+    "href": "index.html#section-9",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "FoReco: From foundations to frontiers\n\n\nIn many forecasting applications, producing multiple time series forecasts across different aggregation levels (such as regions, product categories, or time scales) is both common and necessary. However, independently generated forecasts often fail to respect the underlying constraints linking these series, leading to inconsistencies that can compromise decision-making analyses. Forecast reconciliation addresses this challenge, while preserving or even improving forecast accuracy. FoReco is a dedicated open-source R package that systematically implements forecast reconciliation approaches, providing robust tools for obtaining coherent forecasts in a multivariate setting. It supports hierarchical, grouped, and general linearly constrained time series, and implements both classical and modern reconciliation approaches, including bottom-up, top-down, middle-out, and optimal combination methods. Its main features include full support for cross-sectional, temporal, and cross-temporal reconciliation, availability of both projection and structural formulations, and a wide range of flexible covariance matrices based on sparse structures. Additional features include methods for non-negative reconciliation, reconciliation under immutable constraints, and both point and probabilistic forecast reconciliation using parametric or non-parametric approaches.\n\n\n\n\n\n\n\nDaniele Girolimetto\nPresenter\n\n\n\nCharupriya Sharma\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-10",
+    "href": "index.html#section-10",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Probabilistic forecast reconciliation with bayesRecon\n\n\nForecasts generated for each series in a hierarchy often violate aggregation constraints. The packages bayesRecon (R) and bayesreconpy (Python) implement probabilistic forecast reconciliation via conditioning for hierarchical time series. Our packages reconcile probabilistic forecasts to ensure coherence across the hierarchy. They support different types of base forecasts: Gaussian, continuous non-Gaussian, discrete. They also support mixed hierarchies with discrete and continuous forecasts on different levels. The interface is unified across both languages, and the packages are released under an LGPL (≥3) license. This presentation will introduce the software and demonstrate core functionalities with both R and Python short tutorials.\n\n\n\n\n\n\n\nLorenzo Zambon\nPresenter\n\n\n\nAnubhab Biswas\nPresenter\n\n\n\nOlivier Sprangers\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-11",
+    "href": "index.html#section-11",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Lunch\nFollow us to the Beihang University canteen!"
+  },
+  {
+    "objectID": "index.html#section-12",
+    "href": "index.html#section-12",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Forecasting smoothly with smooth() package\n\n\nADAM (Augmented Dynamic Adaptive Model) is a flexible framework for forecasting using dynamic models. It merges ARIMA and ETS and extends them by implementing explanatory variables, supporting multiple frequencies, and mixture distributions for intermittent demand. ADAM supports a variety of distributions, including Normal, Generalised Normal, Inverse Gaussian, Gamma and others. It allows users to estimate models using a variety of techniques, including regularisation, recursive and direct strategies, and supports custom loss functions, offering flexibility for research purposes. It also supports a variety of ways to produce forecasts for different situations. ADAM is implemented in the smooth package for R. It is agnostic of the provided data and works with vectors, ts, zoo, tsibble classes, together with matrix, data.frame, data.table and others.\n\n\n\n\n\n\n\nKandrika Pritularga\nPresenter\n\n\n\nAdam Wang\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-13",
+    "href": "index.html#section-13",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Integrating Smooth Capabilities into Python\n\n\nThe smooth package provides a comprehensive state-space framework for forecasting, centered on the Augmented Dynamic Adaptive Model (ADAM). ADAM offers a unified structure that integrates and extends classical time series models like ETS, ARIMA, and regression beyond their standard implementations. Originally developed within the R statistical environment, the growth of Python’s forecasting ecosystem motivated the development of a native implementation for its expanding community of researchers and practitioners. This presentation focuses on the engineering specifics of implementing the smooth framework in Python. We explain the architecture, which utilizes the original C++ backend, and detail the refactoring process used to transform the initial translation into an idiomatic, object-oriented Pythonic API.\n\n\n\n\n\n\n\nFilotas Theodosiou\nPresenter\n\n\n\nPablo Montero-Manso\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-14",
+    "href": "index.html#section-14",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Afternoon tea\nFood and drinks are available in the hallway.\nPlease no food or drinks near the seating."
+  },
+  {
+    "objectID": "index.html#section-15",
+    "href": "index.html#section-15",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "bsvars.org design concept: R packages for Predictive Analyses using Bayesian Structural Vector Autoregressions\n\n\nbsvars.org is a family of R packages offering a comprehensive framework for Bayesian Structural Vector Autoregression analysis commonly used in empirical macroeconomics and finance. It is designed to serve diverse user communities from academic researchers to applied economists at policy institutions. This software ecosystem combines the convenience of data analysis using R with computational efficiency of compiled C++ code, leveraging packages Rcpp and RcppArmadillo to boost performance of computationally intensive Bayesian estimation procedures.\n\n\n\n\n\n\n\nAdam Wang\nPresenter\n\n\n\nRob Hyndman\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-16",
+    "href": "index.html#section-16",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Open Source Forecasting in Python: A Survey of Tools, Trends, and Trade-offs\n\n\nAs time series forecasting becomes increasingly central to data-driven decision-making across industries, the Python ecosystem has seen rapid growth in tools tailored to this task. This talk presents a comprehensive review of the current landscape of open-source forecasting packages in Python, covering frameworks, toolboxes, and few-model-packages.\n\n\n\n\n\n\n\nAnirban Ray\nPresenter\n\n\n\nFranz Király\nPresenter\n\n\n\nChristoph Bergmeir\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-17",
+    "href": "index.html#section-17",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "See you tomorrow!\nDon’t forget to bring your passport (or Chinese ID card) for entry!"
+  },
+  {
+    "objectID": "index.html#unsplash-credits",
+    "href": "index.html#unsplash-credits",
+    "title": "IIF OSF",
+    "section": "Unsplash credits",
+    "text": "Unsplash credits\n\n\n\n\n\n\n\nThanks to these Unsplash contributors for their photos\n\n\n\n\n\nSander Weeteling: Photo\nWolf Zimmermann: Cloud lit by the setting sun\nMeriç Dağlı: Photo"
+  }
+]
