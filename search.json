@@ -119,6 +119,83 @@
     "text": "See you tomorrow!\n\n\n\n\n\n\nCampus entry requirements\n\n\nDon’t forget to bring your passport (or Chinese ID card) for entry!"
   },
   {
+    "objectID": "index.html#section-18",
+    "href": "index.html#section-18",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Forecasting 2.0: A Framework for Near-Optimal Time Series Forecasting and Inference via Pre-Trained Models\n\n\nWe introduce a new framework for time series modeling that approximates optimal performance in both forecasting and inference. Implementations are available in both R and Python. We will present the underlying statistical and software design principles—what we call a grammar for optimal time series model design. Traditional models such as ARIMA and Exponential Smoothing rely on estimation techniques like Maximum Likelihood, which do not directly optimize for forecast error or bias. This disconnect is even more pronounced in tasks such as model selection and model combination, where optimality is rarely addressed.\nOur framework leverages neural networks trained on simulations of time series models to act as near-optimal estimators and forecasters tailored to specific optimality criteria. A suite of pre-trained networks is provided as drop-in replacements for classical estimators commonly found in statistical software. These networks, even when approximating simple statistical models, achieve state-of-the-art performance on major time series benchmark datasets—outperforming both traditional estimators and more complex neural architectures, including foundation models.\nThe framework is highly extensible, making it easy to adapt to non-Gaussian distributions, complex nonlinear dynamics, censoring, time-varying parameters, and other scenarios that are easy to simulate but intractable analytically. Importantly, the entire framework is fully open: all model weights, architectures, training data, and pipelines are open-sourced and designed to be trainable on consumer-grade hardware.\n\n\n\n\n\n\n\nPablo Montero-Manso\nPresenter\n\n\n\nKandrika Pritularga\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-19",
+    "href": "index.html#section-19",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "The aeon toolkit for time series machine learning\n\n\naeon is an open source python toolkit supported by funding agencies in the UK (EPSRC) and Frandce (INRIA). We have a strong group of research-focused core developers comprising seven different nationalities, alongside a broad and expanding user base. aeon includes modules for numerous time series machine learning tasks: classification, clustering, regression, anomaly detection, segmentation, and similarity search, in addition to a range of supporting modules including benchmarking, networking, and transformations. We have recently replaced our legacy forecasting module—which relied on wrappers around other packages—with a completely different new module. Our goal is to maintain a clear structure emphasising custom implementations of the latest machine learning forecasting methods. Our forecasting development team currently includes three academic core developers, a PhD student who joined in 2024, and two Google Summer of Code interns. However, our expertise primarily lies in computer science and machine learning rather than forecasting specifically, and we have not previously published in the forecasting field. This talk will provide a brief overview of aeon and outline our roadmap for the forecasting module. We greatly welcome feedback and suggestions regarding future directions for forecasting in aeon.\n\n\n\n\n\n\n\nAnthony Bagnall\nPresenter\n\n\n\nMitchell O’Hara-Wild\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-20",
+    "href": "index.html#section-20",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Morning tea\nFood and drink (yes, and coffee ☕) is available in the hallway.\nPlease no food or drinks near the seating."
+  },
+  {
+    "objectID": "index.html#section-21",
+    "href": "index.html#section-21",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "LLMs Meet Time Series Foundation Models: Are We Ready for Forecasting Agents?\n\n\nAI agents are transforming domains from code generation to autonomous research workflows, yet time series forecasting remains largely unexplored. In this talk, we unpack what AI agents are, how they function, and why they’ve become a central topic in multimodal AI.\nWe’ll revisit core ideas in agent architectures, trace their emergence alongside foundation models, and explore why forecasting presents a distinctive and promising frontier for agent-based design. This conceptual talk is grounded in the open-source forecasting ecosystem and aims to spark a broader conversation: Are we ready for forecasting agents? And if not, what would it take to be?\n\n\n\n\n\n\n\nAzul Garza\nPresenter\n\n\n\nFilotas Theodosiou\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-22",
+    "href": "index.html#section-22",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Deep Time Series Forecasting: Tools and Open Challenges\n\n\nCan neural networks outperform traditional statistical methods, or do they merely add complexity without consistent gains? In this talk, I will review the progress in deep time series models in the past few years and introduce TSLib and OpenLTM, which are widely used open-source libraries for deep learning researchers. Moreover, this talk will also cover some opening discussions for future research on deep learning-based time series forecasting.\n\n\n\n\n\n\n\nHaixu Wu\nPresenter\n\n\n\nArjun Ashok\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-23",
+    "href": "index.html#section-23",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Lunch\nFollow us for a buffet lunch at Beihang University!"
+  },
+  {
+    "objectID": "index.html#section-24",
+    "href": "index.html#section-24",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Hierarchical Forecast Reconciliation on Networks: A Network Flow Optimization Formulation\n\n\nThe problem of hierarchical forecasting with reconciliation requires that we forecast values that are part of a hierarchy (e.g.~customer demand on a state, district or city level), and there is a relation between different forecast values (e.g.~all district forecasts should add up to the state forecast). State of the art forecasting provides no guarantee for these desired structural relationships. Reconciliation addresses this problem, which is crucial for organizations requiring coherent predictions across multiple aggregation levels. Current methods like minimum trace (MinT) are mostly limited to tree structures and are computationally expensive for large-scale problems. We introduce FlowRec, which reformulates hierarchical forecast reconciliation as a network flow optimization problem, enabling forecasting on generalized network structures and relationships beyond trees.\n\n\n\n\n\n\n\nCharupriya Sharma\nPresenter\n\n\n\nDaniele Girolimetto\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-25",
+    "href": "index.html#section-25",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Context-Aided Forecasting: Progress So Far and Next Big Challenges\n\n\nClassical and modern forecasting models based on numerical data have seen widespread success in a range of applications. While historical numerical data and engineered covariates provide a start, they fail to convey the complete context for reliable and accurate predictions. Human forecasters frequently rely on additional information, such as background knowledge and constraints, which can flexibly be communicated through natural language. My talk will be on this setting of “context-aided forecasting”, where the goal is to produce statistical forecasts by incorporating all relevant context in natural language. I will first discuss our efforts on building CiK (short for “Context is Key”), a forecasting benchmark that pairs numerical data with diverse types of carefully crafted textual context, with a strict requirement for models to integrate both modalities to produce accurate forecasts. I will discuss the Region-of-Interest CRPS, a proper scoring rule we propose, which prioritizes context-sensitive windows and accounts for constraint satisfaction. We evaluate a range of approaches on CiK, including statistical models, time series foundation models, and LLM-based forecasters, and propose a simple yet effective LLM prompting method that outperforms all other tested methods on our benchmark. Our experiments demonstrate surprising performance when using LLM-based forecasting models and also reveal some of their critical shortcomings, especially with respect to efficiency. I will also present new results on the benchmark, including simple methods that improve the zero-shot performance of LLMs through forecast-bootstrapping and in-context learning. Next, I will discuss other efforts from the community on benchmarks and methods for context-aided forecasting, and expand on our ongoing work on hybrid methods combining time series foundation models and LLMs for accurate and efficient context-aided forecasting. Finally, I will discuss the next big challenges in this space, centering around building interactive, agentic systems for forecasting and analysis and their potential in democratizing powerful forecasting tools, making them significantly more accurate and accessible.\n\n\n\n\n\n\n\nArjun Ashok\nPresenter\n\n\n\nJoaquin Amat Rodrigo\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-26",
+    "href": "index.html#section-26",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Afternoon tea\nFood and drinks are available in the hallway.\nPlease no food or drinks near the seating."
+  },
+  {
+    "objectID": "index.html#section-27",
+    "href": "index.html#section-27",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "Durbyn.jl: A Julia Framework for Time Series Forecasting\n\n\nDurbyn.jl is a lightweight, modular, and fully Julia-native framework for time series forecasting. Designed with researchers, educators, and practitioners in mind, Durbyn.jl combines clarity with computational power, offering a rich suite of classical models and statistical tools within a clean, extensible architecture.\n\n\n\n\n\n\n\nResul Akay\nPresenter\n\n\n\nYangzhuoran Yang\nDiscussant"
+  },
+  {
+    "objectID": "index.html#section-28",
+    "href": "index.html#section-28",
+    "title": "IIF OSF",
+    "section": "",
+    "text": "A Look Under the Hood of StatsForecast\n\n\nStatsForecast is an open-source Python library that provides a wide range of statistical and econometric forecasting models. It is one of the most widely used forecasting libraries in the field, with over 20 million downloads and more than 4,000 GitHub stars.\nIn this workshop, we’ll take a look under the hood of StatsForecast. We’ll explain its architecture and what makes it so fast and scalable. We will also examine the implementations of the main model families: ARIMA, ETS, Theta, MSTL, baseline models, and models for sparse and intermittent series.\nStatsForecast was recently featured in the Python edition of Forecasting: Principles and Practice, a key reference in the field. This open-source book is available at https://otexts.com/fpppy/ and represents an important part of StatsForecast’s history, as the library began as a Python implementation of many models from the forecast R package.\n\n\n\n\n\n\n\nMariana Menchero García\nPresenter\n\n\n\nResul Akay\nDiscussant"
+  },
+  {
     "objectID": "index.html#unsplash-credits",
     "href": "index.html#unsplash-credits",
     "title": "IIF OSF",
